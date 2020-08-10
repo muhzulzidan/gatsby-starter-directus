@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Gatsby Directus Starter `,
-    description: `Gatsby starter using directur as the CMS `,
+    description: `A starter template to build websites using  Directus as CMS & Gatsby for FrontEnd `,
     author: `@muhzulzidan`,
   },
   plugins: [
