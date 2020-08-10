@@ -1,8 +1,12 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Directus Starter `,
+    description: `Gatsby starter using directur as the CMS `,
+    author: `@muhzulzidan`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,8 +17,29 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: '@directus/gatsby-source-directus',
+      options: {
+        url: 'https://demo.directus.io/admin/#/thumper/settings',
+        project: '_',
+        auth: {
+          token: `${process.env.DIRECTUS_USER}`,
+          password: `${process.env.DIRECTUS_PASSWORD}`,
+        },
+        targetStatuses: ['published', 'draft', '__NONE__'],
+        blockCollections: ['super_secret_stuff'],
+        downloadFiles: false,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
