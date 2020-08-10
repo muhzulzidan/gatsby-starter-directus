@@ -1,18 +1,12 @@
-Gatsby Starter Directus
+# Gatsby Starter Directus
 A starter template to build lightning fast websites with Ghost & Gatsby
 
 Demo: 
 
- 
-
-gatsby-starter-directus
-
- 
-
-Installing
-# With Gatsby CLI
+# Installing
+## With Gatsby CLI
 gatsby new gatsby-starter-ghost https://github.com/muhzulzidan/gatsby-starter-directus.git
-# From Source
+## From Source
 git clone https://github.com/muhzulzidan/gatsby-starter-directus.git
 cd gatsby-starter-ghost
 Then install dependencies
