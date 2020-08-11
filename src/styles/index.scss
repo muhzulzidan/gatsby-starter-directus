@@ -1,0 +1,36 @@
+// base
+
+@import "base/variables";
+@import "base/mixing";
+@import "base/normalize";
+@import "base/breakpoints";
+@import "base/button";
+@import "base/container";
+@import "base/fonts";
+@import "base/layout";
+
+
+// page
+
+@import "./page/post";
+@import "./page/index";
+
+
+// components
+@import "components/layout";
+@import "components/footer";
+@import "components/social";
+
+
+
+// global
+
+body{
+    background: $backgroundColor;
+}
+.none{
+    display: none;
+}
+
+
+

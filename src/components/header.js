@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Logo from "../assets/logo.inline.svg"
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -9,6 +11,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
+    
     <div
       style={{
         margin: `0 auto`,
@@ -23,11 +26,13 @@ const Header = ({ siteTitle }) => (
             color: `white`,
             textDecoration: `none`,
           }}
-        >
+        > 
+        <Logo style={{marginRight:"1em", fontSize:".8em", paddingTop: ".2em"}}/> 
           {siteTitle}
         </Link>
       </h1>
     </div>
+
   </header>
 )
 
