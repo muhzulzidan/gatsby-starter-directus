@@ -24,6 +24,13 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+    //   },
+    // },
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
@@ -40,7 +47,6 @@ module.exports = {
         // blockCollections: [`ticket_notes`, `tickets`, `ticket_files`,  `mailing_list`, `products`,`locations`],
         allowCollections: [`news`, `news_relations`, `directus_files`],
         downloadFiles: false,
-        concurrent: 200,
       },
     },
     {
