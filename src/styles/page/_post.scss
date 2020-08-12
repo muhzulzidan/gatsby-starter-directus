@@ -4,3 +4,145 @@
 .post-written{
     margin-top: 0;
 }
+.post-page {
+    padding: 3em;
+}
+
+.post-nav {
+    font-weight: 700;
+    font-size: 1.3em;
+    display: flex;
+    list-style: none;
+    margin: 0;
+
+}
+
+.post-nav-div-after {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post-nav-div-prev {
+    display: flex;
+    justify-content: flex-start;
+}
+.post-nav>div {
+    width: 50%;
+    margin: 0;
+    padding: 1em;
+}
+.post-nav-after {
+    h3 {
+        font-size: 1em;
+        margin: 0;
+        opacity: .7;
+            &:hover {
+                opacity: 1;
+                transition-duration: .2s;
+            }
+    }
+    display: none;
+    box-shadow: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: $textColor;
+    padding: .6rem;
+    border: 1px solid $textColor;
+    &:hover {
+        background-color: $textColor;
+        color: $mainColor;
+        transition-duration: .2s;
+    }
+}
+.post-nav-after-mobile {
+    svg {
+        font-size: 3rem;
+        opacity: .7;
+        &:hover {
+            opacity: 1;
+            transition-duration: .2s;
+        }
+    }
+}
+
+.post-nav-prev-mobile {
+    svg {
+        font-size: 3rem;
+        opacity: .7;
+            &:hover {
+                opacity: 1;
+                transition-duration: .2s;
+        }
+    }
+}
+
+.post-nav-prev {
+    h3 {
+        font-size: 1em;
+        margin: 0;
+        opacity: .7;
+
+        &:hover {
+            opacity: 1;
+            transition-duration: .2s;
+        }
+    }
+
+    display: none;
+    box-shadow: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: $textColor;
+    padding: .6rem;
+    border: 1px solid $textColor;
+
+    &:hover {
+        transition-duration: .2s;
+        background-color: $textColor;
+        color: $mainColor;
+
+    }
+}
+
+.post-nav-prev-link {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.post-nav-after-link {
+    align-items: flex-end;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+@include bp ("small") {
+    .post-nav-after-mobile {
+        margin-left: 1em;
+        position: relative;
+        bottom: 0;
+
+        svg {
+            font-size: inherit;
+        }
+    }
+
+    .post-nav-prev-mobile {
+        margin-right: 1em;
+        position: relative;
+        bottom: 0;
+
+        svg {
+            font-size: inherit;
+        }
+    }
+
+    .post-nav-after {
+        display: contents;
+    }
+
+    .post-nav-prev {
+        display: contents;
+    }
+}

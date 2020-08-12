@@ -3,15 +3,9 @@
 
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-// styles
-
 const Social = ({ siteTitle,  }) => {
-
+    
 // change data before using
-
-// styles
-
 
   return (
     

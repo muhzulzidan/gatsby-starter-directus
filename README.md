@@ -1,7 +1,7 @@
 # Gatsby Starter Directus
 A starter template to build lightning fast websites with Ghost & Gatsby
 
-Demo: 
+Demo: https://gatsby-directus-starter.netlify.app/
 
 # Installing
 ## With Gatsby CLI

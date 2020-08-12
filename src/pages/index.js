@@ -8,10 +8,6 @@ import SEO from "../components/seo"
 
 const IndexPage = ({data}) => {
     const News = data.allDirectusNews.edges
-    // console.log(News.node.tags)
-    // const tagList = News.node.tags.map((tag, id) =>
-    //   <li style={{listStyle:"none", display:"inline", padding:"1em", background:"black", color:"white", marginLeft:"1em"}} key={id}>{tag}</li>
-    //   );
   return(
   
   <Layout>
@@ -25,12 +21,11 @@ const IndexPage = ({data}) => {
               <div className="index-news">
                 <h2 className="index-news-head-two">{node.title}</h2>
                 <p className="index-news-paragraph"> Ditulis Oleh {node.author.first_name} {node.author.last_name} </p>
-                {/* {console.log(node.tags)} */}
-                {/* <p>{tagList}</p> */}
                 <div className="index-tags">
                  {node.tags.map((tag, id) =>
-                    <li key={id}>{tag}</li>
-                )} 
+                 { return(
+                    <p key={id}>{tag}</p>
+                 )})} 
                 </div>
                 
               </div>

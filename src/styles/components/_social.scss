@@ -24,10 +24,11 @@
 }
 @include bp("small"){
     .social-div {
-        display: flex;
-        justify-content: space-evenly;
         width: 30vw;
-        margin-right: auto;
-        margin-left: auto;
+    }
+}
+@include bp("medium"){
+    .social-div {
+        width: 20vw;
     }
 }
