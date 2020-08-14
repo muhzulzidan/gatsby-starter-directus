@@ -23,11 +23,11 @@ Demo: https://gatsby-directus-starter.netlify.app/
     cd gatsby-starter-directus/
     gatsby develop
     ```
-Start the development server. You now have a Gatsby site pulling content from headless Directus.
+    Start the development server. You now have a Gatsby site pulling content from headless Directus.
  
-  By default, the starter will populate content from the demo: https://demo.directus.io/
+    By default, the starter will populate content from the demo: https://demo.directus.io/
 
-  To use it in your own install, you will have to edit _.env.examples and make .env.production and .env.development
+    To use it in your own install, you will have to edit _.env.examples and make .env.production and .env.development
 
 3.  **Open the source code and start editing!**
 
